@@ -1,0 +1,813 @@
+<!doctype html>
+<html lang="en" id="page-scroll">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Trailhaven — room to wander. Explore thoughtful nature-trip concepts and prepare your own trip enquiry."
+    />
+    <meta name="theme-color" content="#123e3c" />
+    <title>Trailhaven — Room to wander.</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/img/trailhaven-mark.svg"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/ttf"
+      href="assets/fonts/fraunces-variable.ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/css/lenis.css?v=2f668ae84a" />
+    <link rel="stylesheet" href="assets/css/trailhaven.css?v=c24d42b687" />
+    <script defer src="assets/js/lenis-1.3.27.min.js?v=80f53e77f1"></script>
+    <script defer src="assets/js/trailhaven.js?v=6afd5e8dfd"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header" id="site-header">
+      <a class="brand" href="#top"
+        ><img
+          src="assets/img/trailhaven-mark.svg"
+          width="37"
+          height="37"
+          alt=""
+        />Trailhaven</a
+      >
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="#trips">Find a trail</a
+        ><a href="#our-way">The Trailhaven way</a
+        ><a href="#questions">Good to know</a
+        ><a href="#enquire" class="nav-enquiry"
+          >Make room for a trip
+          <span class="arrow" aria-hidden="true">↗</span></a
+        >
+      </nav>
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Open navigation"
+        type="button"
+        hidden
+      >
+        <span>Explore</span
+        ><span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
+    </header>
+    <div class="mobile-menu" id="mobile-menu" hidden inert>
+      <div class="menu-scroll" id="menu-scroll">
+        <div class="menu-inner">
+          <p>Where shall we wander?</p>
+          <nav aria-label="Mobile navigation">
+            <a href="#trips"
+              >Find a trail <span class="arrow" aria-hidden="true">↗</span></a
+            ><a href="#our-way"
+              >The Trailhaven way
+              <span class="arrow" aria-hidden="true">↗</span></a
+            ><a href="#questions"
+              >Good to know <span class="arrow" aria-hidden="true">↗</span></a
+            ><a href="#enquire"
+              >Plan a trip <span class="arrow" aria-hidden="true">↗</span></a
+            >
+          </nav>
+          <p class="menu-note">
+            A slower pace.<br /> A little more perspective.
+          </p>
+        </div>
+      </div>
+    </div>
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <img
+          class="hero-photo"
+          src="assets/img/lake-trail.webp"
+          width="2200"
+          height="1584"
+          alt="A quiet gravel trail curves beside a blue alpine lake and pine forest toward distant mountains"
+          fetchpriority="high"
+        />
+        <div class="hero-shade"></div>
+        <div class="hero-content wrap">
+          <div>
+            <p class="hero-intro">A slower pace. A wider view.</p>
+            <h1 id="hero-title">Room<br /> to wander.</h1>
+            <p class="hero-copy">
+              For days that start on a trail<br /> and stay with you long after.
+            </p>
+            <a class="button button-moss" href="#trips"
+              >Find your kind of outside
+              <span class="arrow" aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="hero-note">
+            <svg
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 34 20 9l15 25H7Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+              <path
+                d="m15 19 5 4 5-4"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+            </svg>
+            <p>Follow the path.<br /> Leave room for the view.</p>
+          </div>
+        </div>
+      </section>
+      <div class="walking-ribbon">
+        <p>Forest shade. Lakeside pauses. Open horizons.</p>
+        <span>Find a pace that feels like you.</span>
+      </div>
+      <section
+        class="trips section wrap"
+        id="trips"
+        aria-labelledby="trips-title"
+      >
+        <div class="trip-heading">
+          <div>
+            <p class="section-label">A few ways to get away</p>
+            <h2 id="trips-title">Less scrolling.<br /> More strolling.</h2>
+          </div>
+          <p>
+            Start with the time you have and the pace you prefer. These sample
+            itineraries are a starting point for a conversation.
+          </p>
+        </div>
+        <div class="trip-filters" id="trip-filters" hidden>
+          <fieldset>
+            <legend>Time outside</legend>
+            <label
+              ><input type="radio" name="duration" value="all" checked /><span
+                >Any length</span
+              ></label
+            ><label
+              ><input type="radio" name="duration" value="day" /><span
+                >A day away</span
+              ></label
+            ><label
+              ><input type="radio" name="duration" value="weekend" /><span
+                >A weekend</span
+              ></label
+            >
+          </fieldset>
+          <label class="gentle-filter"
+            ><input id="gentle-only" type="checkbox" />A gentler pace</label
+          >
+          <p id="filter-status" role="status">3 trip ideas</p>
+        </div>
+        <noscript
+          ><p class="quiet">
+            All three trip ideas are shown below. Open each day plan to compare
+            them.
+          </p></noscript
+        >
+        <div class="trip-list">
+          <article
+            class="trip-row"
+            id="lake-trip"
+            data-trip="lake"
+            data-duration="day"
+            data-pace="gentle"
+          >
+            <div class="trip-image">
+              <img
+                src="assets/img/lake-trail.webp"
+                width="2200"
+                height="1584"
+                alt="An empty lakeside path framed by alpine peaks and trees"
+                loading="lazy"
+              /><span>By the water</span>
+            </div>
+            <div class="trip-copy">
+              <div class="trip-facts">
+                <span>1 day</span><span>Gentle pace</span>
+              </div>
+              <h3>Lakepath ramble</h3>
+              <p>
+                A lakeside wander with space for a picnic, a quiet lookout and
+                an unhurried way back.
+              </p>
+              <a href="#lake-details" data-itinerary="lake" class="text-action"
+                >View itinerary
+                <span class="arrow" aria-hidden="true">↗</span></a
+              >
+              <details id="lake-details" class="route-details">
+                <summary>
+                  Read the day plan
+                  <span class="chevron" aria-hidden="true"></span>
+                </summary>
+                <div class="faq-answer itinerary-body">
+                  <p class="route-summary">
+                    A one-day concept with around 6 km of walking, following a
+                    lakeshore out and back. Distances and pace are illustrative.
+                  </p>
+                  <ol>
+                    <li>
+                      <h4>Morning — follow the water</h4>
+                      <p>
+                        Start with a relaxed shoreline walk and time to notice
+                        the forest and changing views.
+                      </p>
+                    </li>
+                    <li>
+                      <h4>Midday — a pause with a view</h4>
+                      <p>
+                        Make room for a packed lunch and a longer stop before
+                        retracing the route.
+                      </p>
+                    </li>
+                    <li>
+                      <h4>Afternoon — the easy way home</h4>
+                      <p>
+                        Return along the same path, keeping the afternoon
+                        flexible rather than adding another destination.
+                      </p>
+                    </li>
+                  </ol>
+                  <p class="route-practical">
+                    Discuss access, terrain, transport and current conditions
+                    with your trip organiser. No departures or inclusions are
+                    offered by this demo.
+                  </p>
+                </div>
+              </details>
+            </div>
+            <div class="trip-distance">
+              <strong>6<span> km</span></strong
+              ><span>Illustrative walking distance</span>
+            </div>
+          </article>
+          <article
+            class="trip-row"
+            id="woodland-trip"
+            data-trip="woodland"
+            data-duration="weekend"
+            data-pace="steady"
+          >
+            <div class="trip-image">
+              <img
+                src="assets/img/forest-trail.webp"
+                width="1200"
+                height="900"
+                alt="An empty rocky forest trail winds through evergreen trees and mist"
+                loading="lazy"
+              /><span>Under the trees</span>
+            </div>
+            <div class="trip-copy">
+              <div class="trip-facts">
+                <span>2 days</span><span>Steady pace</span>
+              </div>
+              <h3>Woodland weekend</h3>
+              <p>
+                Trade a busy weekend for forest paths, misty clearings and a
+                slower evening between walks.
+              </p>
+              <a
+                href="#woodland-details"
+                data-itinerary="woodland"
+                class="text-action"
+                >View itinerary
+                <span class="arrow" aria-hidden="true">↗</span></a
+              >
+              <details id="woodland-details" class="route-details">
+                <summary>
+                  Read the day plan
+                  <span class="chevron" aria-hidden="true"></span>
+                </summary>
+                <div class="faq-answer itinerary-body">
+                  <p class="route-summary">
+                    A two-day concept with around 14 km of walking split across
+                    two forest outings. Uneven paths and uphill sections are
+                    part of the idea.
+                  </p>
+                  <ol>
+                    <li>
+                      <h4>Day 1 — into the woodland</h4>
+                      <p>
+                        Walk a forest loop with breaks in the clearings, then
+                        return to a nearby base for the evening.
+                      </p>
+                    </li>
+                    <li>
+                      <h4>Day 2 — follow a different path</h4>
+                      <p>
+                        Explore a second woodland trail and leave time for a
+                        final stop before travelling home.
+                      </p>
+                    </li>
+                  </ol>
+                  <p class="route-practical">
+                    Accommodation, meals, access and transport would need
+                    separate confirmation. This fictional concept does not
+                    reserve or include them.
+                  </p>
+                </div>
+              </details>
+            </div>
+            <div class="trip-distance">
+              <strong>14<span> km</span></strong
+              ><span>Illustrative walking distance</span>
+            </div>
+          </article>
+          <article
+            class="trip-row"
+            id="highland-trip"
+            data-trip="highland"
+            data-duration="weekend"
+            data-pace="active"
+          >
+            <div class="trip-image">
+              <img
+                src="assets/img/highland.webp"
+                width="1200"
+                height="800"
+                alt="A view across distant snowy hills and forests framed by a dark rocky opening"
+                loading="lazy"
+              /><span>Above it all</span>
+            </div>
+            <div class="trip-copy">
+              <div class="trip-facts">
+                <span>2 days</span><span>Active pace</span>
+              </div>
+              <h3>Highland outlook</h3>
+              <p>
+                Longer walking days and wider horizons. A concept for those who
+                enjoy making a little more of the journey.
+              </p>
+              <a
+                href="#highland-details"
+                data-itinerary="highland"
+                class="text-action"
+                >View itinerary
+                <span class="arrow" aria-hidden="true">↗</span></a
+              >
+              <details id="highland-details" class="route-details">
+                <summary>
+                  Read the day plan
+                  <span class="chevron" aria-hidden="true"></span>
+                </summary>
+                <div class="faq-answer itinerary-body">
+                  <p class="route-summary">
+                    A two-day concept with around 22 km of walking on uneven
+                    upland terrain. It is a more demanding idea to discuss with
+                    a qualified local organiser.
+                  </p>
+                  <ol>
+                    <li>
+                      <h4>Day 1 — find the higher ground</h4>
+                      <p>
+                        Take a longer upland walk with time built in for rests
+                        and changing conditions, then return to base.
+                      </p>
+                    </li>
+                    <li>
+                      <h4>Day 2 — another perspective</h4>
+                      <p>
+                        Explore a different outlook, with route length and plans
+                        reviewed against the conditions and the group.
+                      </p>
+                    </li>
+                  </ol>
+                  <p class="route-practical">
+                    The photograph is illustrative, not the route. Terrain,
+                    weather, equipment, guide needs and personal suitability
+                    require local assessment. No climbing or cave activity is
+                    offered.
+                  </p>
+                </div>
+              </details>
+            </div>
+            <div class="trip-distance">
+              <strong>22<span> km</span></strong
+              ><span>Illustrative walking distance</span>
+            </div>
+          </article>
+        </div>
+        <div id="empty-state" class="empty-state" hidden>
+          <h3>A different combination, perhaps?</h3>
+          <p>
+            There is no gentle weekend in this sample collection. Try another
+            length or explore every trip.
+          </p>
+          <button type="button" id="reset-filters" class="button button-teal">
+            Show all trips <span class="arrow" aria-hidden="true">↗</span>
+          </button>
+        </div>
+        <p class="demo-note">
+          Fictional trip concepts. No live departures, prices or reservations.
+          Photos illustrate the mood of each journey.
+        </p>
+      </section>
+      <section id="our-way" class="our-way section">
+        <div class="wrap way-grid">
+          <figure class="trail-map">
+            <img
+              src="assets/img/trail-map.svg"
+              width="760"
+              height="650"
+              alt="Illustrative map showing a shared trailhead, a short Lakepath ramble loop, a Woodland weekend loop and a longer Highland outlook route. Not a navigation map."
+              loading="lazy"
+            />
+            <figcaption>
+              One starting point. Three different ways to wander.<br /> <span
+                >Schematic only. Fictional routes, not for navigation.</span
+              >
+            </figcaption>
+          </figure>
+          <div class="way-copy sticky">
+            <p class="section-label">The Trailhaven way</p>
+            <h2>Go a little slower.<br /> See a little more.</h2>
+            <p>
+              A good trip leaves room for the things you cannot schedule: the
+              light through the trees, a quiet bend in the path, the longer
+              lunch.
+            </p>
+            <ul>
+              <li>
+                <strong>Pick the right pace.</strong
+                ><span
+                  >Choose a concept that fits your time and interests, then
+                  discuss the practical details.</span
+                >
+              </li>
+              <li>
+                <strong>Leave space in the day.</strong
+                ><span
+                  >A thoughtful plan is a starting point, with room to adjust to
+                  the conditions.</span
+                >
+              </li>
+              <li>
+                <strong>Take care of the place.</strong
+                ><span
+                  >Ask about local access and how your visit can respect the
+                  landscape.</span
+                >
+              </li>
+            </ul>
+            <a href="#enquire" class="text-action"
+              >Make room for a trip
+              <span class="arrow" aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        class="enquiry-section section"
+        id="enquire"
+        aria-labelledby="enquiry-title"
+      >
+        <div class="wrap enquiry-grid">
+          <div class="enquiry-intro sticky">
+            <p class="section-label">Your next outside</p>
+            <h2 id="enquiry-title">
+              A trail starts<br /> with a little<br /> curiosity.
+            </h2>
+            <p>
+              Choose an itinerary, share a few preferences, and prepare an
+              enquiry to send in your own time.
+            </p>
+            <div class="selected-trip">
+              <span>Trip you are considering</span
+              ><strong id="selected-trip-name">Still exploring</strong
+              ><a href="#trips"
+                >Explore the itineraries
+                <span class="arrow" aria-hidden="true">↗</span></a
+              >
+            </div>
+            <p class="enquiry-disclosure">
+              This demo prepares an unsent draft on your device. It does not
+              send, book or save your details.
+            </p>
+          </div>
+          <div class="form-workbench">
+            <form id="enquiry-form">
+              <input
+                type="hidden"
+                name="trip"
+                id="enquiry-trip"
+                value="Still exploring"
+              />
+              <div class="form-row">
+                <div class="field">
+                  <label for="enquiry-name">Your name</label
+                  ><input
+                    required
+                    id="enquiry-name"
+                    name="name"
+                    autocomplete="name"
+                    maxlength="100"
+                    placeholder="Alex Taylor"
+                  />
+                </div>
+                <div class="field">
+                  <label for="enquiry-email">Email address</label
+                  ><input
+                    required
+                    type="email"
+                    id="enquiry-email"
+                    name="email"
+                    autocomplete="email"
+                    maxlength="200"
+                    placeholder="alex@example.com"
+                  />
+                </div>
+              </div>
+              <fieldset class="season-choice">
+                <legend>When are you thinking?</legend>
+                <label
+                  ><input
+                    type="radio"
+                    name="season"
+                    value="Spring"
+                    checked
+                  />Spring</label
+                ><label
+                  ><input
+                    type="radio"
+                    name="season"
+                    value="Summer"
+                  />Summer</label
+                ><label
+                  ><input
+                    type="radio"
+                    name="season"
+                    value="Autumn"
+                  />Autumn</label
+                ><label
+                  ><input
+                    type="radio"
+                    name="season"
+                    value="Flexible"
+                  />Flexible</label
+                >
+              </fieldset>
+              <fieldset class="group-choice">
+                <legend>Who is coming?</legend>
+                <label
+                  ><input type="radio" name="group" value="Solo" checked />Just
+                  me</label
+                ><label
+                  ><input type="radio" name="group" value="Two adults" />Two
+                  adults</label
+                ><label
+                  ><input
+                    type="radio"
+                    name="group"
+                    value="A small adult group"
+                  />A small adult group</label
+                >
+              </fieldset>
+              <div class="field">
+                <label for="enquiry-message"
+                  >What would make it your kind of trip?</label
+                ><textarea
+                  required
+                  id="enquiry-message"
+                  name="message"
+                  rows="4"
+                  maxlength="3000"
+                  placeholder="The pace, scenery or practical questions on your mind…"
+                ></textarea>
+              </div>
+              <p class="form-note">
+                Adult enquiries only. Keep health details, travel documents and
+                other sensitive information out of this demo.
+              </p>
+              <button
+                type="submit"
+                id="prepare-draft"
+                class="button button-teal"
+                disabled
+              >
+                Prepare my enquiry
+                <span class="arrow" aria-hidden="true">↗</span></button
+              ><noscript
+                ><p>
+                  JavaScript is required to prepare a local draft. You can still
+                  use these prompts to write your own enquiry.
+                </p></noscript
+              >
+            </form>
+            <section
+              id="draft-result"
+              class="draft-result"
+              aria-labelledby="draft-title"
+              hidden
+            >
+              <h3 id="draft-title">Your next step, in words.</h3>
+              <p>
+                Review this unsent draft. Copy or download it to share yourself.
+              </p>
+              <div class="draft-shell">
+                <div
+                  id="draft-scroll"
+                  class="draft-scroll"
+                  tabindex="0"
+                  role="region"
+                  aria-label="Unsent trip enquiry"
+                >
+                  <pre id="draft-text"></pre>
+                </div>
+              </div>
+              <div class="draft-actions">
+                <button
+                  type="button"
+                  class="button button-teal"
+                  id="copy-draft"
+                >
+                  Copy enquiry</button
+                ><button type="button" id="download-draft" class="text-action">
+                  Download text <span class="arrow" aria-hidden="true">↓</span>
+                </button>
+              </div>
+              <p id="copy-status" role="status" class="status"></p>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section
+        class="faq-section section wrap"
+        id="questions"
+        aria-labelledby="faq-title"
+      >
+        <div class="faq-heading">
+          <p class="section-label">Before you lace up</p>
+          <h2 id="faq-title">Good to know.</h2>
+        </div>
+        <div class="faqs">
+          <details class="faq-item">
+            <summary>
+              Are these real trips I can book?<span
+                class="chevron"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                No. These are fictional itinerary concepts for a website
+                demonstration. There are no departures, prices, guides,
+                inclusions or reservations attached to them. A real organiser
+                must confirm every practical detail.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>
+              How should I use the pace descriptions?<span
+                class="chevron"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                They help compare the sample concepts, not assess personal
+                suitability. Terrain, distance, weather and access change the
+                experience. Discuss the full route and requirements with a
+                qualified local organiser before making plans.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>
+              Can I follow the trail map on a walk?<span
+                class="chevron"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                No. The map is an original schematic illustration of fictional
+                routes. It has no coordinates or verified trail information and
+                must not be used for navigation. Use current authoritative local
+                information for any real journey.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>
+              What is included in an itinerary?<span
+                class="chevron"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                The details describe a possible rhythm for the day only. Travel,
+                accommodation, meals, equipment, permits and guides are not
+                included or arranged. Use your enquiry to ask a real organiser
+                what a specific proposal would cover.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>
+              What happens when I prepare an enquiry?<span
+                class="chevron"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Your selected trip and preferences become an unsent draft in
+                this page. Nothing is transmitted, booked or saved by
+                Trailhaven. You can copy or download the text and decide where
+                to share it yourself.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" id="site-footer">
+      <div class="wrap">
+        <div class="footer-main">
+          <a class="brand" href="#top"
+            ><img
+              src="assets/img/trailhaven-mark.svg"
+              width="37"
+              height="37"
+              alt=""
+            />Trailhaven</a
+          >
+          <p>Bring your curiosity.<br /> Leave room for wonder.</p>
+          <a href="#top" class="back-top" aria-label="Back to top"
+            ><span class="arrow arrow-up" aria-hidden="true">↑</span></a
+          >
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Trailhaven. Fictional demonstration.</p>
+          <p>
+            Designed &amp; developed by
+            <a
+              href="https://www.usmankhairdin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><strong>Usman Khair Din</strong></a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <dialog id="trip-dialog" class="trip-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-top">
+        <span>A closer look at the journey</span
+        ><button
+          type="button"
+          class="dialog-close"
+          aria-label="Close itinerary"
+        >
+          <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
+            <circle
+              cx="16"
+              cy="16"
+              r="12"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            />
+            <path
+              d="m12 12 8 8m0-8-8 8"
+              stroke="currentColor"
+              stroke-width="1.5"
+            />
+          </svg>
+        </button>
+      </div>
+      <div id="dialog-scroll" class="dialog-scroll">
+        <div class="dialog-inner">
+          <img
+            id="dialog-image"
+            src="assets/img/lake-trail.webp"
+            width="2200"
+            height="1584"
+            alt="An empty lakeside path framed by alpine peaks"
+          />
+          <p id="dialog-meta" class="dialog-meta">1 day · Gentle pace</p>
+          <h2 id="dialog-title">Lakepath ramble</h2>
+          <div id="dialog-body"></div>
+          <button type="button" id="choose-trip" class="button button-teal">
+            Enquire about this trip
+            <span class="arrow" aria-hidden="true">↗</span>
+          </button>
+          <p class="dialog-note">
+            A fictional concept. Nothing will be booked or sent.
+          </p>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+[
+  {
+    "file": "assets/img/lake-trail.webp",
+    "author": "Sarah Burger",
+    "sourcePage": "https://unsplash.com/photos/a-trail-leading-to-a-lake-with-mountains-in-the-background-W1hUY4lNSsY",
+    "retrievalUrl": "https://images.unsplash.com/photo-1697938053009-b23cea8cbb52?auto=format&fit=crop&w=2200&q=85&fm=webp",
+    "license": "https://unsplash.com/license",
+    "retrieved": "2026-10-26",
+    "inspection": "view_image before use: empty lake trail, forest and mountains; no people visible."
+  },
+  {
+    "file": "assets/img/forest-trail.webp",
+    "author": "Egor Komarov",
+    "sourcePage": "https://unsplash.com/photos/a-foggy-mountain-trail-winding-through-a-dense-forest-nCsKDi1u6qo",
+    "retrievalUrl": "https://images.unsplash.com/photo-1783890028700-ac3fafb9364b?auto=format&fit=crop&w=1200&q=82&fm=webp",
+    "license": "https://unsplash.com/license",
+    "retrieved": "2026-10-26",
+    "inspection": "view_image before use: rocky path, evergreen trees and mist; no people visible."
+  },
+  {
+    "file": "assets/img/highland.webp",
+    "author": "Luca Bravo",
+    "sourcePage": "https://unsplash.com/photos/landscape-photography-of-mountains-1RqXSxGfb0M",
+    "retrievalUrl": "https://images.unsplash.com/photo-1515019915774-f4887104b715?auto=format&fit=crop&w=1200&q=82&fm=webp",
+    "license": "https://unsplash.com/license",
+    "retrieved": "2026-10-26",
+    "inspection": "view_image before use: distant snowy hills/forest/buildings framed by dark rock; no people visible. Illustrative scenery, not a route or climbing/cave activity."
+  }
+]

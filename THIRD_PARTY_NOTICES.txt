@@ -1,0 +1,57 @@
+TRAILHAVEN — THIRD-PARTY NOTICES
+
+Original Trailhaven identity, page composition, copy, CSS, trail symbol and
+schematic route-map SVG: Copyright (c) 2026 Usman Khair Din. MIT, LICENSE.
+Trailhaven is a fictional demonstration, not a cleared business trademark.
+The route names, distances and itinerary concepts are authored fictional
+content, not actual destinations, navigation data or bookable departures.
+
+SHARED INTERACTION MECHANICS
+Menu/focus, one-clock Lenis coordination, anchors, slim scrollbars and
+measured FAQ mechanics adapted from free MIT Nookwell/Taskline Lite code.
+Complete grants: licenses/Nookwell-MIT.txt and licenses/Taskline-MIT.txt,
+including retained upstream Themesberg attribution. No paid visual source,
+Tailwind CSS/runtime or copied visual shell is included.
+
+LENIS 1.3.27
+https://github.com/darkroomengineering/lenis
+Copyright (c) 2024 darkroom.engineering. MIT; licenses/Lenis-MIT.txt.
+Unmodified pinned local browser JS and CSS from free Nookwell distribution.
+
+FRAUNCES (unmodified variable TTF)
+Copyright 2018 The Fraunces Project Authors
+https://github.com/undercasetype/Fraunces
+Official distribution: https://github.com/google/fonts/tree/main/ofl/fraunces
+Exact file:
+https://raw.githubusercontent.com/google/fonts/main/ofl/fraunces/Fraunces%5BSOFT%2CWONK%2Copsz%2Cwght%5D.ttf
+SIL Open Font License 1.1; complete notice: licenses/Fraunces-OFL.txt.
+
+MANROPE (unmodified local Latin variable WOFF2)
+Copyright 2019 The Manrope Project Authors.
+Official source: https://github.com/sharanda/manrope
+Bundled from the licensed local Taskline Lite distribution.
+SIL OFL 1.1; complete notice: licenses/Manrope-OFL.txt.
+
+PHOTOGRAPHY — UNSPLASH
+Three landscape photos, each inspected locally before page incorporation.
+No people visible. Illustrative imagery; not claimed as actual itinerary
+locations or operator work. Exact image URLs/local filenames are retained
+in licenses/photo-sources.json.
+
+Sarah Burger — lakeside trail:
+https://unsplash.com/photos/a-trail-leading-to-a-lake-with-mountains-in-the-background-W1hUY4lNSsY
+Egor Komarov — misty forest trail:
+https://unsplash.com/photos/a-foggy-mountain-trail-winding-through-a-dense-forest-nCsKDi1u6qo
+Luca Bravo — upland view through a rocky opening:
+https://unsplash.com/photos/landscape-photography-of-mountains-1RqXSxGfb0M
+
+Unsplash License: https://unsplash.com/license
+Unsplash grants you an irrevocable, nonexclusive, worldwide copyright license
+to download, copy, modify, distribute, perform, and use images from Unsplash
+for free, including for commercial purposes, without permission from or
+attributing the photographer or Unsplash. This license does not include the
+right to compile images from Unsplash to replicate a similar or competing
+service. Images cannot be sold without significant modification.
+These photographs are incorporated into a designed website; do not resell
+as standalone stock. MIT does not replace photo/font terms or establish
+property, trademark or model releases.
